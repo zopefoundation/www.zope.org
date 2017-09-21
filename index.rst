@@ -3,8 +3,8 @@ Welcome to Zope Project and Community
 =====================================
 
 Zope is a free and open source web application server written in the
-object-oriented programming language "Python".  Since it's release in
-1998 Zope continued to grow into many distinct applications,
+object-oriented programming language "Python".  Since its release in
+1998, Zope continues to grow into many distinct applications,
 frameworks, libraries and tools.
 
 :doc:`Learn more <world>`
