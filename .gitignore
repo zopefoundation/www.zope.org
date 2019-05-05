@@ -1,0 +1,7 @@
+bin/
+eggs/
+.installed.cfg
+*.swp
+parts/
+docs/_build/
+develop-eggs/

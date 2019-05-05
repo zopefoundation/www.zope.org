@@ -3,7 +3,7 @@
 
 # You can set these variables from the command line.
 SPHINXOPTS    =
-SPHINXBUILD   = sphinx-build
+SPHINXBUILD   = ../bin/sphinx-build
 SPHINXPROJ    = ZopeProjectandCommunity
 SOURCEDIR     = .
 BUILDDIR      = _build
