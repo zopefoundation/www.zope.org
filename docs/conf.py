@@ -19,6 +19,10 @@
 # import os
 # import sys
 # sys.path.insert(0, os.path.abspath('.'))
+import datetime
+
+
+year = datetime.datetime.now().year
 
 
 # -- General configuration ------------------------------------------------
@@ -46,8 +50,8 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'Zope Project and Community'
-copyright = u'2017, Zope Community'
-author = u'Zope Community'
+copyright = u'1999-%i, The Zope developer community' % year
+author = u'The Zope developer community'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -82,7 +86,7 @@ todo_include_todos = False
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 #
-html_theme = 'default'
+html_theme = 'sphinx_rtd_theme'
 html_logo = 'logo.gif'
 html_favicon = 'favicon.ico'
 
@@ -130,7 +134,7 @@ latex_elements = {
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
     (master_doc, 'ZopeProjectandCommunity.tex', u'Zope Project and Community Documentation',
-     u'Zope Community', 'manual'),
+     u'The Zope developer community', 'manual'),
 ]
 
 
