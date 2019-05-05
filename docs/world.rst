@@ -1,4 +1,3 @@
-=================
 The World of Zope
 =================
 
@@ -34,7 +33,7 @@ an outstanding set of products and technologies, influencing the
 general development of Python based Web application servers and tools.
 
 Frameworks
-==========
+----------
 
 ZCA
   The Zope Component Architecture provides facilities for defining,
@@ -76,7 +75,7 @@ Repoze
 
 
 Databases
-=========
+---------
 
 ZODB
   The Z Object Database (ZODB) is a native object database, that
@@ -86,7 +85,7 @@ ZODB
   More information at http://zodb.org
 
 Application Servers
-===================
+-------------------
 
 Zope
   Zope is a Python-based application server for building secure and
@@ -95,7 +94,7 @@ Zope
   More information at http://zope.readthedocs.io
 
 Tools
-=====
+-----
 Buildout
   Buildout is a Python-based build system for creating, assembling and
   deploying applications from multiple parts, some of which may be

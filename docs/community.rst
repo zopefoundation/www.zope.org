@@ -1,6 +1,5 @@
-=========
-Community
-=========
+The Zope Community
+==================
 
 The Zope community is one of the Largest and most professional
 open-source communities worldwide.

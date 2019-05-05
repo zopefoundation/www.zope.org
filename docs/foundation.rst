@@ -1,6 +1,5 @@
-===============
-Zope Foundation
-===============
+The Zope Foundation
+===================
 
 The Zope Foundation has the goal to promote, maintain, and develop the
 Zope platform. It does this by supporting the Zope community.
