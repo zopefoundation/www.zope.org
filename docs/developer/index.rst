@@ -74,7 +74,7 @@ Becoming a Zope Committer
    subversion-writable-checkouts
 
 
-Repository committee operations (internal)
+Repository committee operations (obsolete)
 ------------------------------------------
 
 .. toctree::

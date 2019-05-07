@@ -6,15 +6,14 @@ Becoming a Contributor
 Applying for Committer Status
 -----------------------------
 
+Instructions on gaining commit rights to the Zope repositories are given at <https://plone.org/foundation/contributors-agreement/contributors-agreement-explained>_`
+
 1. Print, fill out and sign the
-   :download:`Zope Committer Agreement <./Zope_Foundation_Committer_Agreement.pdf>`.
+   :download:`Plone Contributor Agreement <./Plone_Contributor_Agreement.pdf>`.
 
-2. Submit the agreement to the Zope Foundation via email to
-   contributor-admin@zope.org.
+2. Scan the agreement and submit it by email to agreements@plone.org
 
-3. Wait for an acknowledgement. If you don't get this in a reasonable amount
-   of time, then ask back on the Zope Foundation list
-   (foundation-info@zope.org).
+3. You will be added to the GitHub repository shortly.
 
 Subscribe to the Mailing Lists
 ------------------------------
