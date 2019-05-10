@@ -72,21 +72,3 @@ Becoming a Zope Committer
 
    becoming-a-committer
    subversion-writable-checkouts
-
-
-Repository committee operations (obsolete)
-------------------------------------------
-
-.. toctree::
-   :maxdepth: 2
-
-   new-members-procedure
-
-
-Zope CVS Repository (obsolete)
-------------------------------
-
-.. toctree::
-   :maxdepth: 2
-
-   cvs
