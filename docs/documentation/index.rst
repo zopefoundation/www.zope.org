@@ -7,7 +7,7 @@ This site links to various documentation sources for Zope and related software.
 Zope
 ----
 The Zope web application server, formerly called Zope 2, is under active
-development and nearing release 4.0.
+development. The latest major release was version 4.
 
 * `Main Zope documentation site <https://zope.readthedocs.io/>`_
 * `The Zope Book <https://zope.readthedocs.io/en/latest/zopebook/index.html>`_
