@@ -380,7 +380,7 @@ method on the ``ZopeSecurityPolicy``. This is a charming 200+ line bundle of
     * If the ``container`` is a tuple or string, and we have gotten this far, we
       consider access to be allowed and return true. (This can't really happen
       through URL traversal, but could occur with path traversal).
-    * If the ``container `` is an object with an attribute
+    * If the ``container`` is an object with an attribute
       ``__allow_access_to_unprotected_subobjects__``, obtain this, which can be
       of three things:
 
