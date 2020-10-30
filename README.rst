@@ -1,7 +1,7 @@
 www.zope.org
 ============
 
-This repository contains the Sphinx documentation sources for www.zope.org.
+This repository contains the Sphinx sources for www.zope.org.
 
 
 Sandbox setup instructions
@@ -18,7 +18,7 @@ Create a virtual environment, install ``zc.buildout`` and run the buildout::
 Building the site
 -----------------
 
-After th sandbox is set up once (see above), use the following steps to build
+After the sandbox is set up once (see above), use the following steps to build
 the HTML output::
 
   $ cd docs/
