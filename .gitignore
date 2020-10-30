@@ -2,6 +2,9 @@ bin/
 eggs/
 .installed.cfg
 *.swp
+lib/
+lib64
 parts/
 docs/_build/
 develop-eggs/
+pyvenv.cfg
