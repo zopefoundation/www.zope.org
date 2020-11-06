@@ -11,7 +11,8 @@ The guide pertains to Zope 2.13.
 
 If you only want to know how to *use* the APIs and features described below,
 you are probably better served reading the
-`Zope Developer's Guide <http://docs.zope.org/zope2/zdgbook/>`_.
+`Zope Developer's Guide
+<https://zope.readthedocs.io/en/latest/zdgbook/index.html>`_.
 
 .. toctree::
     :maxdepth: 2

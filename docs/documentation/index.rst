@@ -21,11 +21,11 @@ ZODB
 ----
 The ZODB object database is the default storage engine for Zope.
 
-* `Main ZODB documentation site <http://www.zodb.org/>`_
-* `ZODB tutorial <http://www.zodb.org/en/latest/tutorial.html>`_
-* `ZODB/ZEO programming guide <http://www.zodb.org/en/latest/guide/index.html>`_
-* `API documentation <http://www.zodb.org/en/latest/reference/index.html>`_
-* `ZODB articles <http://www.zodb.org/en/latest/articles/index.html>`_
+* `Main ZODB documentation site <https://www.zodb.org/>`_
+* `ZODB tutorial <https://www.zodb.org/en/latest/tutorial.html>`_
+* `ZODB/ZEO programming guide <https://www.zodb.org/en/latest/guide/index.html>`_
+* `API documentation <https://www.zodb.org/en/latest/reference/index.html>`_
+* `ZODB articles <https://www.zodb.org/en/latest/articles/index.html>`_
 
 
 Zope Toolkit (ZTK)

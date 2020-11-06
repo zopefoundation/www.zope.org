@@ -10,7 +10,7 @@ As a general rule, projects in our repositories abide by the
 following standards:
 
 - Code in Zope-related projects should generally conform to `PEP 8 coding
-  style <http://www.python.org/dev/peps/pep-0008/>`_. In
+  style <https://www.python.org/dev/peps/pep-0008/>`_. In
   particular, *Python code should never exceed 80 columns*.  Existing
   code should be updated to this standard only conservatively, to ease
   integration of patches made against older releases.
