@@ -7,16 +7,7 @@ Intended Audience
 This guide is for developers who are working **on** the various Zope-related
 software projects, rather than for developers who work **with** those
 projects' released software to build applications.  Developers in the
-latter category should consult the relevant documentation for that software,
-e.g.:
-
-- `Zope Toolkit Documentation <http://docs.zope.org/zopetoolkit/>`_
-
-- `The Zope2 Book <http://docs.zope.org/zope2/zope2book/>`_
-
-- `The Zope2 Developers' Guide <http://docs.zope.org/zope2/zdgbook/>`_
-
-- `Zope3 API Documentation <http://docs.zope.org/zope3/>`_
+latter category should visit :doc:`/documentation/index` instead.
 
 
 Contributor Roles
@@ -42,12 +33,13 @@ in such projects.  For instance:
 Resources for Contributors
 --------------------------
 
+Visit https://github.com/zopefoundation to see and browse all repositories
+maintained by the Zope developer community.
+
 .. toctree::
    :maxdepth: 2
 
-   repository-browsing
    bug-trackers
-   irc-channels
    mailing-lists
    development-culture
 
@@ -60,8 +52,6 @@ Contributing as a Non-Committer
 
    reporting-bugs
    sphinx-documentation
-   noncommitter-svn
-   noncommitter-bzr
 
 
 Becoming a Zope Committer
@@ -71,4 +61,3 @@ Becoming a Zope Committer
    :maxdepth: 2
 
    becoming-a-committer
-   subversion-writable-checkouts

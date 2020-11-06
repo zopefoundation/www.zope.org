@@ -87,8 +87,8 @@ todo_include_todos = False
 # a list of builtin themes.
 #
 html_theme = 'sphinx_rtd_theme'
-html_logo = 'logo.gif'
-html_favicon = 'favicon.ico'
+#html_logo = '_static/logo.gif'
+html_favicon = '_static/favicon.ico'
 
 
 # Theme options are theme-specific and customize the look and feel of a theme
@@ -163,4 +163,4 @@ texinfo_documents = [
 
 
 # Example configuration for intersphinx: refer to the Python standard library.
-intersphinx_mapping = {'https://docs.python.org/': None}
+intersphinx_mapping = {'https://docs.python.org/3/': None}

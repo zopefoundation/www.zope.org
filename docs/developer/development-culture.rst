@@ -1,12 +1,12 @@
-Zope Development Culture
-========================
+Developer guidelines
+====================
 
 .. _coding-standards:
 
 Coding Standards
 ----------------
 
-As a general rule, projects in the ``Zope`` repository abide by the
+As a general rule, projects in our repositories abide by the
 following standards:
 
 - Code in Zope-related projects should generally conform to `PEP 8 coding
@@ -15,20 +15,9 @@ following standards:
   code should be updated to this standard only conservatively, to ease
   integration of patches made against older releases.
 
-- Project trunks should be kept in "ready-to-release" state:  all unit
-  tests pass, changelogs are kept updated, etc.
-
-- We prefer that each project's unit tests be runnable using the default
-  :mod:`setuptools` testrunner:
-
-  .. code-block: sh
-
-     $ /path/to/python setup.py test
-
-- Integation or functional tests may require a more elaborate test runner,
-  such as the one provided by :mod:`zope.testrunner`.  Most projects have
-  built-in support for setting up this testrunner using :mod:`zc.buildout`.
-  (see :ref:`using-buildout`).
+- Project `master` branches and all branches that are officially supported
+  should be kept in "ready-to-release" state: all unit tests pass, changelogs
+  are kept updated, etc.
 
 - All features and APIs should be fully documented using Sphinx.
 
@@ -41,12 +30,6 @@ As a corollary:  if you are submitting a patch to a project in this
 repository, and you want to expedite its acceptance, ensure that your patch
 maintains or improves the target project's conformance to these goals.
 
-See these other resources on coding style in Zope projects:
-
-- `Zope3 Coding Standards <http://wiki.zope.org/zope3/CodingStyle>`_
-
-- `Zope Toolkit Coding Style <http://docs.zope.org/zopetoolkit/codingstyle/index.html>`_
-
 
 .. _layout-conventions:
 
@@ -54,16 +37,8 @@ Layout and Conventions
 ----------------------
 
 Each project should consist of a single, top-level project folder in
-Subversion, containing three conventional folders:  ``trunk``, where the
-majority of development work occurs, ``tags``, containing the "pristine"
-tags made when releasing the project, and ``branches``, containing both
-"maintenance" branches where bug fixes to a released version might be
-made, and "development" branches, for work which would otherwise de-
-stabilize the trunk.
-
-Because we are mostly working on Python code here, the trunk and folders
-under the ``tags`` or ``branches`` folders are normally arranged as a
-:mod:`distutils` project, e.g.::
+GitHub. Because we are mostly working on Python code here, projects are
+normally arranged as a :mod:`distutils` project, e.g.::
 
   <directory>
   - setup.py
@@ -102,20 +77,45 @@ building in-place and running tests using :mod:`zc.buildout`.
 
 .. code-block:: sh
 
-   $ svn co svn://svn.zope.org/repos/main/zope.event/trunk event-trunk
-   $ cd event-trunk
-   $ /opt/Python-2.6.5/bin/python bootstrap.py
+   $ git clone https://github.com/zopefoundation/Zope.git
+   $ cd Zope
+   $ python3 -m venv .
+   $ bin/pip install -U pip wheel zc.buildout
+   $ bin/buildout
    ...
-   Generated script '/tmp/event-trunk/bin/buildout'.
-   $ bin/buidout
-   Develop: '/tmp/event-trunk/.'
+   $ bin/test
    ...
-   Generated script '/tmp/event-trunk/bin/test'.
-   $ bin/test --all
-   Running zope.testing.testrunner.layer.UnitTests tests:
-     Set up zope.testing.testrunner.layer.UnitTests in 0.000 seconds.
-     Ran 3 tests with 0 failures and 0 errors in 0.006 seconds.
-   Tearing down left over layers:
-     Tear down zope.testing.testrunner.layer.UnitTests in 0.000 seconds.
 
 
+Python 2 support policy
+-----------------------
+
+.. note::
+    This policy applies to packages that are direct dependencies of Zope 4
+
+Zope 4 will retain full Python 2 (and Python 3.5) compatibility throughout its
+lifetime. That means all its `direct dependencies
+<https://zopefoundation.github.io/Zope/releases/4.x/versions-prod.cfg>`_
+and (ideally) many popular add-on packages should also continue supporting
+Python 2 until Zope 4 reaches end-of-life status.
+
+We encourage all package maintainers to provide Python 2 support on the current
+``master`` release branch instead of a separate maintenance branch because a
+separate maintenance branch leads to a lot of extra work:
+
+- fixes must be ported between branches
+
+- a contributor may not even be aware of a separate maintenance branch
+
+- at package release time releases need to be cut from both the ``master`` and
+  maintenance branches
+
+With that in mind, dropping Python 2 (or Python 3.5) support for a Zope 4
+dependency is allowable under the following circumstances:
+
+- there are compelling technical reasons - or -
+
+- the developer who implements the Python 2/Python 3.5 support drop assumes all
+  responsibility for creating a suitable maintenance branch, porting fixes to
+  it, and making releases from the maintenance branch until Zope 4 support
+  ends.

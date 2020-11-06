@@ -41,8 +41,8 @@ ZCA
   enterprise applications based on loosely coupled components.
 
   More information at the `zope.component documentation
-  <http://zopecomponent.readthedocs.io>`_ and `zope.interface
-  documentation <http://zopeinterface.readthedocs.io>`_.
+  <https://zopecomponent.readthedocs.io>`_ and `zope.interface
+  documentation <https://zopeinterface.readthedocs.io>`_.
 
 ZTK
   The Zope Toolkit (ZTK) is a set of libraries intended for reuse by
@@ -50,15 +50,15 @@ ZTK
   part of it.
 
   More information at the `Zopetoolkit documentation
-  <http://zopetoolkit.readthedocs.io/en/latest/>`_.
+  <https://zopetoolkit.readthedocs.io/en/latest/>`_.
 
 ZPT
   Zope Page Templates is Zope's templating mechanism.
 
   More information at the
-  http://docs.zope.org/zope2/zope2book/AppendixC.html. An alternative
+  https://docs.zope.org/zope2/zope2book/AppendixC.html. An alternative
   implementation is provided by `Chameleon
-  <http://chameleon.readthedocs.io/en/latest/>`_.
+  <https://chameleon.readthedocs.io/en/latest/>`_.
 
 CMF
   The Content Management Framework (CMF) for Zope provides a powerful,
@@ -66,12 +66,12 @@ CMF
   together with the Zope Application Server.
 
   More information at the `CMF Product Page
-  <http://old.zope.org/Products/CMF/index.html/>`_
+  <https://old.zope.org/Products/CMF/index.html/>`_
 
 Repoze
   Repoze integrates Zope technologies with WSGI and reusable Python middleware.
 
-  More information at http://repoze.org
+  More information at https://repoze.org
 
 
 Databases
@@ -82,7 +82,7 @@ ZODB
   stores your objects while allowing you to work with any paradigms
   that can be expressed in Python.
 
-  More information at http://zodb.org
+  More information at https://zodb.org
 
 Application Servers
 -------------------
@@ -91,7 +91,7 @@ Zope
   Zope is a Python-based application server for building secure and
   highly scalable web applications.
 
-  More information at http://zope.readthedocs.io
+  More information at https://zope.readthedocs.io
 
 Tools
 -----
@@ -100,4 +100,4 @@ Buildout
   deploying applications from multiple parts, some of which may be
   non-Python-based.
 
-  More information at http://buildout.org
+  More information at https://buildout.org

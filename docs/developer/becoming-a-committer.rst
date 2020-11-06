@@ -9,8 +9,12 @@ Applying for Committer Status
 Detailed instructions for gaining commit rights to the Zope repositories are
 at https://plone.org/foundation/contributors-agreement/contributors-agreement-explained.
 
-1. Print, fill out and sign the
-   :download:`Plone Contributor Agreement <./Plone_Contributor_Agreement.pdf>`.
+.. note::
+    Exisiting Plone contributors are required to submit the contributor
+    agreement again to gain access to the Zope repositories.
+
+1. Print, fill out and sign the `Plone Contributor Agreement
+   <https://plone.org/foundation/contributors-agreement/agreement.pdf>`_.
    On page 2 enter `Zope` in the field for `program`.
 
 2. Scan the agreement and submit it by email to agreements@plone.org
