@@ -1,37 +1,36 @@
-Reporting Bugs against Zope Packages
-====================================
+Reporting Bugs
+==============
 
-.. note::
-   
-   This outline needs fleshing out.
+The Zope developer community uses the `GitHub zopefoundation organization
+<https://github.com/zopefoundation>`_ to host all projects. Each repository
+has its own issue tracker for bug reports, feature requests or questions.
+For example, Zope developers track bugs within Zope using the ``Zope``
+project on GitHub:
 
-
-Identifying the Project which Has the Bug
------------------------------------------
-
-- Look at tracebacks from "bottom up".
-
-- Look for recently updated eggs.
+ https://github.com/zopefoundation/Zope/issues
 
 
-Writing the Bug Report
-----------------------
+How to write a good bug report
+------------------------------
 
-- Identify version(s) of code which manifest the bug
+Here's how you get help most effectively:
 
-- Describe the symptom as clearly as possible.
+- Before filing a bug report, make sure you can reproduce the issue on a plain
+  vanilla Zope installation. If you cannot, then it's probably not a Zope bug.
 
-- Provide a complete recipe for reproducing the bug.
+- Please provide as many details as possible, such as...
 
+  - Zope version
+  - Python version
+  - Operating system
+  - Full Python tracebacks if you have them
 
-Useful Patches for the Bug Report
----------------------------------
+- It's helpful to describe bugs in terms of expected and actual outcomes, that
+  makes it easier to follow along and reproduce it: *In the Zope ZMI I was
+  clicking on the Interfaces tab of a DTML Method, and instead of seeing the
+  Interfaces tab I saw the following error output: ...*
 
-In order of increasing helpfulness:
-
-- Changes to non-test code which work around the problem
-
-- Unit tests which fail against the current code
-
-- Changes to non-test code, which pass against those tests.
-
+- If the developers need more information and follow up with questions, please
+  make sure to answer in a timely manner, especially if the issue report is
+  marked with the feedback required tag. If we don't hear from you after 2-3
+  weeks the issue may be closed.

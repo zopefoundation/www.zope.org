@@ -1,5 +1,5 @@
-Documenting Zope Packages Using Sphinx
-======================================
+Documenting code with Sphinx
+============================
 
 .. note::
    

@@ -1,6 +1,33 @@
 Developer guidelines
 ====================
 
+.. note::
+    Any code contributions that are more than trivial typo fixes require
+    a signed contributor agreement. Please see :doc:`becoming-a-committer`
+    for details.
+
+
+Pull requests
+-------------
+
+Pull requests for bug fixes, features or documentation are always welcome.
+Here's how you can make it easy to accept your contribution:
+
+- Please create branches in the package's repository instead of forking the
+  package. That way other contributors can help easily.
+
+- Respect the conventions you find in the package you're contributing to. This
+  includes code style, tools used to run and configure tests, the package
+  structure and its management. Coordinate with other developers for that
+  package before changing any of these.
+
+- Keep cosmetic and code changes apart. If necessary, put them in separate pull
+  requests.
+
+- If your code is fixing a bug it should have unit tests that exercise the
+  bug and pass with your fix.
+
+
 .. _coding-standards:
 
 Coding Standards
@@ -33,8 +60,8 @@ maintains or improves the target project's conformance to these goals.
 
 .. _layout-conventions:
 
-Layout and Conventions
-----------------------
+Package layout
+--------------
 
 Each project should consist of a single, top-level project folder in
 GitHub. Because we are mostly working on Python code here, projects are
@@ -85,37 +112,3 @@ building in-place and running tests using :mod:`zc.buildout`.
    ...
    $ bin/test
    ...
-
-
-Python 2 support policy
------------------------
-
-.. note::
-    This policy applies to packages that are direct dependencies of Zope 4
-
-Zope 4 will retain full Python 2 (and Python 3.5) compatibility throughout its
-lifetime. That means all its `direct dependencies
-<https://zopefoundation.github.io/Zope/releases/4.x/versions-prod.cfg>`_
-and (ideally) many popular add-on packages should also continue supporting
-Python 2 until Zope 4 reaches end-of-life status.
-
-We encourage all package maintainers to provide Python 2 support on the current
-``master`` release branch instead of a separate maintenance branch because a
-separate maintenance branch leads to a lot of extra work:
-
-- fixes must be ported between branches
-
-- a contributor may not even be aware of a separate maintenance branch
-
-- at package release time releases need to be cut from both the ``master`` and
-  maintenance branches
-
-With that in mind, dropping Python 2 (or Python 3.5) support for a Zope 4
-dependency is allowable under the following circumstances:
-
-- there are compelling technical reasons - or -
-
-- the developer who implements the Python 2/Python 3.5 support drop assumes all
-  responsibility for creating a suitable maintenance branch, porting fixes to
-  it, and making releases from the maintenance branch until Zope 4 support
-  ends.
