@@ -27,6 +27,9 @@ Here's how you can make it easy to accept your contribution:
 - If your code is fixing a bug it should have unit tests that exercise the
   bug and pass with your fix.
 
+- "vendoring in" of third-party code is not allowed unless all contributors to
+  that code have also signed a contributor agreement.
+
 
 .. _coding-standards:
 
