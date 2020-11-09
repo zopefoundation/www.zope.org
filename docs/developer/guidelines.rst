@@ -27,8 +27,15 @@ Here's how you can make it easy to accept your contribution:
 - If your code is fixing a bug it should have unit tests that exercise the
   bug and pass with your fix.
 
+- Make sure all unit and functional tests pass before creating a pull request.
+  Most repositories will have a ``tox.ini`` configuration file and you can run
+  all tests at once using ``tox``.
+
 - "vendoring in" of third-party code is not allowed unless all contributors to
   that code have also signed a contributor agreement.
+
+Please wait for approval from at least one other contributor before merging
+your code, which you can do yourself.
 
 
 .. _coding-standards:
