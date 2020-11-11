@@ -31,6 +31,7 @@ maintained by the Zope developer community.
    reporting-bugs
    mailing-lists
    becoming-a-committer
+   roadmap
 
 
 Guidelines

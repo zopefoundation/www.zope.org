@@ -11,7 +11,7 @@ development. The latest major release was version 5.
 
 * `Main Zope documentation site <https://zope.readthedocs.io/>`_
 * `Release notes <https://zope.readthedocs.io/en/latest/changes.html>`_
-* `Development roadmap <https://zope.readthedocs.io/en/latest/roadmap.html>`_
+* :doc:`../developer/roadmap`
 * `The Zope Book <https://zope.readthedocs.io/en/latest/zopebook/index.html>`_
 * `The Zope Developers Guide <https://zope.readthedocs.io/en/latest/zdgbook/index.html>`_
 * :doc:`zope_secrets/index` (written for Zope 2)
