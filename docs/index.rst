@@ -37,4 +37,3 @@ open-source communities worldwide.
 
    community
    developer/index
-   developer/becoming-a-committer
