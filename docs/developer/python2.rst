@@ -27,6 +27,11 @@ separate maintenance branch leads to a lot of extra work:
 - at package release time releases need to be cut from both the ``master`` and
   maintenance branches
 
+- since existing tools for finding updated dependencies for Zope 4 only detect
+  the very latest releases, which may no longer support Python 2, every single
+  dependency that is pinned to an earlier version must be manually checked to
+  see if there are updates.
+
 With that in mind, dropping Python 2 (or Python 3.5) support for a Zope 4
 dependency is allowable under the following circumstances:
 
