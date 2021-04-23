@@ -26,7 +26,8 @@ Visit https://github.com/zopefoundation to see and browse all repositories
 maintained by the Zope developer community.
 
 The overview at https://zope3.pov.lt/py3/gha.html lists the supported
-Python versions and the build status for all Zope Foundation projects.
+Python versions and the build status for all Zope Foundation projects
+(the overview is not guaranteed to be complete and accurate).
 
 .. toctree::
    :maxdepth: 1
