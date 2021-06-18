@@ -25,18 +25,18 @@ configuration maintainers:
 
 Prerequisites
 -------------
-- every project publishing binary wheels must add the PyPI account
+- Every project publishing binary wheels must add the PyPI account
   ``zope.wheelbuilder`` to the list of project maintainers on PyPI. 
-- log into the ``zope.wheelbuilder`` account and create an API token for the
+- Log into the ``zope.wheelbuilder`` account and create an API token for the
   project on the "Account settings" page with upload permissions and the
   project name as scope. Copy the token value - this is the only time you can.
 
 Using Appveyor
 --------------
-- log into Appveyor at ci.appveyor.com, click on "Account" at the top and then
+- Log into Appveyor at ci.appveyor.com, click on "Account" at the top and then
   "Encrypt YAML" on the left-hand menu. Paste the copied token into the input
   field and then copy the encrypted value.
-- if the project already uses the `standardized parameterized project
+- If the project already uses the `standardized parameterized project
   configuration <https://github.com/zopefoundation/meta/tree/master/config>`_
   add the following to the ``.meta.toml`` file in the ``[appveyor]`` section,
   replacing ``<USER>`` with the Appveyor account used and ``<ENCRYPTED TOKEN>``
@@ -57,7 +57,7 @@ Using Appveyor
         "    secure: <ENCRYPTED TOKEN>",
         ]
 
-- if you are not using the standardized project config you can edit
+- If you are not using the standardized project config you can edit
   ``appveyor.yml`` directly:
 
 .. code:: yaml
@@ -82,11 +82,11 @@ Using Appveyor
 
 Using GitHub Actions
 --------------------
-- on your project GitHub page go to "Settings" and then click on "Secrets" on
+- On your project GitHub page go to "Settings" and then click on "Secrets" on
   the left-hand menu. Create a new repository secret and call it
   ``TWINE_PASSWORD``. Paste the API token value you created for the
   ``zope.wheelbuilder`` PyPI account.
-- take a look at a `complete GitHub Actions test and wheel building
+- Take a look at a `complete GitHub Actions test and wheel building
   configuration
   <https://github.com/zopefoundation/ExtensionClass/blob/master/.github/workflows/tests.yml>`_
   for inspiration, or if you already use the `standardized parameterized project
