@@ -28,13 +28,13 @@ Prerequisites
 - every project publishing binary wheels must add the PyPI account
   ``zope.wheelbuilder`` to the list of project maintainers on PyPI. 
 - log into the ``zope.wheelbuilder`` account and create an API token for the
-  project on the `Account settings` page with upload permissions and the
+  project on the "Account settings" page with upload permissions and the
   project name as scope. Copy the token value - this is the only time you can.
 
 Using Appveyor
 --------------
-- log into Appveyor at ci.appveyor.com, click on `Account` at the top and then
-  `Encrypt YAML` on the left-hand menu. Paste the copied token into the input
+- log into Appveyor at ci.appveyor.com, click on "Account" at the top and then
+  "Encrypt YAML" on the left-hand menu. Paste the copied token into the input
   field and then copy the encrypted value.
 - if the project already uses the `standardized parameterized project
   configuration <https://github.com/zopefoundation/meta/tree/master/config>`_
@@ -82,7 +82,7 @@ Using Appveyor
 
 Using GitHub Actions
 --------------------
-- on your project GitHub page go to `Settings` and then click on `Secrets` on
+- on your project GitHub page go to "Settings" and then click on "Secrets" on
   the left-hand menu. Create a new repository secret and call it
   ``TWINE_PASSWORD``. Paste the API token value you created for the
   ``zope.wheelbuilder`` PyPI account.
