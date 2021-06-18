@@ -47,3 +47,4 @@ Guidelines
    guidelines
    sphinx-documentation
    python2
+   binarywheels
