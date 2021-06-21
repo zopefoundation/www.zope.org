@@ -2,9 +2,9 @@ Building binary wheels
 ======================
 
 Several packages in the Zope Foundation repositories contain C code, which
-means they should be packaged and published as binary wheels alongside the
-standard egg archive. Building binary wheels has its pitfalls, though. If not
-done right they can cause application instability and crashes.
+means they should be packaged and published as binary wheels. Building such
+binary wheels has its pitfalls, though. If not done right they can cause
+application instability and crashes.
 
 
 .. warning::
