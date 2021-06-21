@@ -14,7 +14,7 @@ done right they can cause application instability and crashes.
     environments.
 
 To minimize problems we have automated binary wheel building using CI providers
-like Appveyor and GitHub Actions. Wheels are built and uploaded using a special
+like AppVeyor and GitHub Actions. Wheels are built and uploaded using a special
 GitHub account named ``zope.wheelbuilder``. These configurations and the PyPI
 account are currently maintained by Marius Gedminas, Michael Howitz and Jens
 Vagelpohl. You can contact them by posting your question or bug report in the
