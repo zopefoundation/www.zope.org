@@ -57,8 +57,7 @@ Plone, uses Zope 4.
 Zope 2.13 - old version
 -----------------------
 Plone 4.3, 5.0 and 5.1 are running on top of Zope 2.13. Zope 2.13 is no longer
-officially supported but may see releases in response to secyrity issues
-uncovered on the still-supported versions of Plone that use it.
+officially supported.
 
 * Python support:
     - 2.7
