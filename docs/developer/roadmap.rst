@@ -49,15 +49,16 @@ Plone, uses Zope 4.
 
 * Support schedule:
     - Full support: ended on 2020-10-08 (the Zope 5.0 release date)
-    - Bug fixes: until 2021-12-31 or until Plone 6.1 is released, whichever
+    - Bug fixes: until 2021-12-31 or until Plone 6.0 is released, whichever
       comes later
-    - Security fixes: until 2022-12-31 or until Plone 6.1 is released,
-      whichever comes later
+    - Security fixes: until 2022-12-31
 
 
 Zope 2.13 - old version
 -----------------------
-Plone 4.3, 5.0 and 5.1 are running on top of Zope 2.13.
+Plone 4.3, 5.0 and 5.1 are running on top of Zope 2.13. Zope 2.13 is no longer
+officially supported but may see releases in response to secyrity issues
+uncovered on the still-supported versions of Plone that use it.
 
 * Python support:
     - 2.7
@@ -65,4 +66,4 @@ Plone 4.3, 5.0 and 5.1 are running on top of Zope 2.13.
 * Support schedule:
     - Full support: ended
     - Bug fixes: ended
-    - Security fixes: ended on 2020-12-31
+    - Security fixes: ended
