@@ -21,9 +21,8 @@ Zope 5 - stable version
 Plone 6, which is still under development, will use Zope 5.
 
 * Python support:
-    - 3.6 (`Python 3.6 will reach end of support in December 2021
-      <https://www.python.org/dev/peps/pep-0494/#lifespan>`_, Zope will stop
-      supporting it officially at that time)
+    - 3.6 (we will drop support for Python 3.6 at the end of 2023, two years
+      after it reached end-of-life status)
     - 3.7
     - 3.8
     - 3.9

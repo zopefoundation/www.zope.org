@@ -7,4 +7,5 @@ lib64
 parts/
 docs/_build/
 develop-eggs/
+default.profraw
 pyvenv.cfg
