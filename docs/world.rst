@@ -56,17 +56,14 @@ ZPT
   Zope Page Templates is Zope's templating mechanism.
 
   More information at the
-  https://docs.zope.org/zope2/zope2book/AppendixC.html. An alternative
+  https://zope.readthedocs.io/en/latest/zopebook/AppendixC.html. An alternative
   implementation is provided by `Chameleon
   <https://chameleon.readthedocs.io/en/latest/>`_.
 
 CMF
-  The Content Management Framework (CMF) for Zope provides a powerful,
-  tailorable platform for building content management applications
+  The Content Management Framework (CMF) for Zope provides libraries 
+  for building content management applications
   together with the Zope Application Server.
-
-  More information at the `CMF Product Page
-  <https://old.zope.org/Products/CMF/index.html/>`_
 
 Repoze
   Repoze integrates Zope technologies with WSGI and reusable Python middleware.

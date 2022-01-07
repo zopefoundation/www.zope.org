@@ -13,7 +13,7 @@ Security
 
 E-Mail
   Several Zope-related email lists are maintained on the `Zope community list
-  server <https://mail.zope.org>`_.
+  server <https://mail.zope.dev>`_.
 
 Web sites and forums
   The Plone community forums have a lively `Zope discussion category
@@ -52,8 +52,5 @@ organizations that use Zope.
 
 The Plone Foundation is the copyright holder of the Zope software and many
 extensions and associated software maintained in the `zopefoundation` GitHub organization at https://www.github.com/zopefoundation.
-
-The Plone Foundation also manages the zope.org website as well as supporting
-infrastructure for open source collaboration.
 
 For more information, visit https://plone.org/foundation

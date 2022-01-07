@@ -4,9 +4,9 @@ Mailing Lists
 =============
 
 Active Zope and Zope Toolkit developers should subscribe to the
-`zope-dev mailing list <https://mail.zope.org/mailman/listinfo/zope-dev>`_.
+`zope-dev mailing list <https://mail.zope.dev/mailman/listinfo/zope-dev>`_.
 
 Depending on your interest you can subscribe to other Zope mailing lists
-as well:
+as well or visit discontinued and archived list archives:
 
- https://mail.zope.org/mailman/listinfo
+ https://mail.zope.dev/

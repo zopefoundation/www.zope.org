@@ -1,7 +1,7 @@
-www.zope.org
-============
+www.zope.org/www.zope.dev
+=========================
 
-This repository contains the Sphinx sources for www.zope.org.
+This repository contains the Sphinx sources for www.zope.org/www.zope.dev.
 
 
 Sandbox setup instructions
