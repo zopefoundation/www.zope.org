@@ -17,8 +17,8 @@ version(s) built on top of them.
     However, given how fast Python releases are coming, we cannot follow that
     policy anymore.
 
-    In the future, when a Python version reaches End Of Life status, we may
-    remove support for it in a following feature (minor) release.
+    Starting with Zope 5, when a Python version reaches End Of Life status,
+    we may remove support for it in a following feature (minor) release.
 
 
 Zope 6 - future version
