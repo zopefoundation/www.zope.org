@@ -1,12 +1,24 @@
 Zope development roadmap
 ========================
 
-The Zope development and support roadmap. **Last updated: October 2021**
+The Zope development and support roadmap. **Last updated: April 2022**
 
 If you use Plone, please visit the `Plone release schedule
 <https://plone.org/download/release-schedule>`_ for all Plone-specific details.
 Support for Zope releases aims to track support for the respective Plone
 version(s) built on top of them.
+
+
+.. warning::
+
+    Zope used to have a policy whereby a given Zope release series will not
+    drop support for any Python version it supported at the start of the
+    release series. Such a change would require a new major Zope release.
+    However, given how fast Python releases are coming, we cannot follow that
+    policy anymore.
+
+    In the future, when a Python version reaches End Of Life status, we may
+    remove support for it in a following feature (minor) release.
 
 
 Zope 6 - future version
@@ -21,8 +33,8 @@ Zope 5 - stable version
 Plone 6, which is still under development, will use Zope 5.
 
 * Python support:
-    - 3.6 (we will drop support for Python 3.6 at the end of 2023, two years
-      after it reached end-of-life status)
+    - 3.6 (Python 3.6 has reached End Of Life status, we will stop supporting
+      it with Zope 5.7)
     - 3.7
     - 3.8
     - 3.9
@@ -48,8 +60,7 @@ Plone, uses Zope 4.
 
 * Support schedule:
     - Full support: ended on 2020-10-08 (the Zope 5.0 release date)
-    - Bug fixes: until 2021-12-31 or until Plone 6.0 is released, whichever
-      comes later
+    - Bug fixes: until 2022-12-31
     - Security fixes: until 2022-12-31
 
 
