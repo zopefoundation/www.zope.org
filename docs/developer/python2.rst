@@ -53,8 +53,14 @@ more modern practices, like using `f-strings
 Prerequisites
 ~~~~~~~~~~~~~
 
-- ``pyupgrade`` installed (the code examples below expect it to be on the
-  search PATH.)
+- Installed packages the code examples below expect it to be on ``$PATH``.
+
+  - ``pyupgrade``
+  - ``check-python-versions``
+  - ``zest.releaser``
+
+- Repository is under control of ``meta/config`` thus it has a ``.meta.toml``
+  file.
 
 
 Typical steps
@@ -62,49 +68,49 @@ Typical steps
 
 The following steps are necessary to remove Python 2 support from a package:
 
-- Create a new branch from ``master`` first that can be used as maintenance
-  branch with Python 2 support for backporting important fixes if needed.
+- Update version number to next major version::
 
-- Create a new branch from ``master`` to hold your code changes and switch to
-  that branch for the next steps.
+    $ bumpversion --breaking
+
+- Remove Python 2 support from the Trove classifiers in ``setup.py`` and update
+  ``python_requires``::
+
+    $ check-python-versions --drop 2.7,3.5
+
+- ``.meta.toml``
+
+  - Remove Python 2 specific settings
+
+- Run ``meta/config`` to remove Python 2 support from other configuration
+  files and create a branch::
+
+    $ bin/python config-package.py <PATH-TO-REPOS> --without-legacy-python --no-commit --branch=py3-only
 
 - ``setup.py``
 
-  - Update version number to next major version.
-  - Remove Python 2 from the list of classifiers.
   - Remove ``six`` from the list of dependencies
-  - Update ``python_requires`` to ``python_requires='>=3.6, <4'``
-  - Remove other things pointing to Python 2 or PyPy/PyPy2.
-
-- ``setup.cfg``
-
-  - set ``universal = 0`` in section ``[bdist_wheel]``
-
-- ``tox.ini``
-
-  - Remove ``py27``, ``pypy`` or ``pypy2`` from ``envlist``
-  - Remove Python 2 specific environments
-
-- ``.travis.yml``
-
-  - Remove Python 2.7 and PyPy/PyPy2 jobs.
-
-- ``appveyor.yml``
-
-  - Remove Python 2 job(s) if existing.
+  - Remove other things pointing to Python 2 or PyPy2.
 
 - ``CHANGES.rst``
 
-  - Update the version number of the unreleased version
-  - Add an entry: ``Drop support for Python 2.``
+  - Add an entry: ``Drop support for Python 2 and 3.5.``
 
-- Remove Python 2 support code
+- Remove Python 2 support code:
 
-  - Replace all code that uses ``six`` with its Python 3 equivalent,
-    find it by running ``grep -rn six src``
-  - Run the tests with ``tox`` and fix any problems you encounter
-  - Run ``egrep -rn "2.7|sys.version|PY2|PY3|Py2|Py3|Python 2|Python 3|__unicode__|ImportError" src`` to find any remaining code that may support Python 2
-  - Run ``find src -name "*.py" -exec pyupgrade --py36-plus {} \;``
-    to update the code to Python 3 only coding standards.
+  - Update the code to Python 3 only and update usage of ``six``::
 
-- Create pull request against ``master`` from your code change branch.
+    $ find src -name "*.py" -exec pyupgrade --py3-plus --py36-plus {} \;
+
+  - Replace all remaining ``six`` mentions, find it by running::
+
+    $ grep -rn six src
+
+  - Find any remaining code that may support Python 2::
+
+    $ egrep -rn "2.7|3.5|sys.version|PY2|PY3|Py2|Py3|Python 2|Python 3|__unicode__|ImportError" src
+
+  - Run the tests with ``tox`` and fix any problems you encounter.
+
+- Commit the changes to the branch.
+
+- Create pull request against ``master`` with your changes.
