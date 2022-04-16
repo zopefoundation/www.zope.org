@@ -18,7 +18,11 @@ version(s) built on top of them.
     policy anymore.
 
     Starting with Zope 5, when a Python version reaches End Of Life status,
-    we may remove support for it in a following feature (minor) release.
+    we may remove support for it in a following feature (minor) release. This
+    is the planned support drop schedule:
+
+    - Python 3.6 support was deprecated with Zope version 5.5.1 and will
+      be dropped by Zope version 5.7.
 
 
 Zope 6 - future version
@@ -33,12 +37,11 @@ Zope 5 - stable version
 Plone 6, which is still under development, will use Zope 5.
 
 * Python support:
-    - 3.6 (Python 3.6 has reached End Of Life status, we will stop supporting
-      it with Zope 5.7)
+    - 3.6 (Deprecated with Zope version 5.5.1, will be dropped in Zope version 5.7)
     - 3.7
     - 3.8
     - 3.9
-    - 3.10 (planned for early 2022)
+    - 3.10 (new with Zope version 5.4)
 
 * Support schedule:
     - Full support: ongoing
