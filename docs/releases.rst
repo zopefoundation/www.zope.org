@@ -17,6 +17,8 @@ Zope currently has two release managers, Michael Howitz and Jens Vagelpohl.
 Support schedule
 ----------------
 
+.. image:: /_static/releases.png
+
 +------+-------+--------------+-----------+----------+------------+------------+
 |Series|Latest |Python        |Status     |First     |End support:|End support:|
 +------+-------+--------------+-----------+----------+------------+------------+
@@ -29,7 +31,8 @@ Support schedule
 |5.0   |5.7    |3.6-3.11      |maintenance|2020-10-08|2023-12-31  |2024-12-31  |
 |      |       |[1]_ [2]_ [3]_|           |          |[4]_        |[4]_        |
 +------+-------+--------------+-----------+----------+------------+------------+
-|6.0   |       |              |unreleased |TBD [5]_  |            |            |
+|6.0   |\-     |TBD           |unreleased |TBD [5]_  |2025-12-31  |2027-12-31  |
+|      |       |              |           |          |[6]_        |[6]_        |
 +------+-------+--------------+-----------+----------+------------+------------+
 
 .. [1] Python 3.10 support added with release 5.4.
@@ -46,6 +49,9 @@ Support schedule
 
 .. [5] There is no release date for Zope 6 yet because there hasn't been any
        backwards-incompatible changes warranting a new major release yet.
+
+.. [6] Purely speculative and subject to change after a release date has been
+       set for Zope 6.
 
 Definitions
 -----------
