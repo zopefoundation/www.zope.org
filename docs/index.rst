@@ -11,8 +11,13 @@ the most important components.
 Zope community projects are hosted in the `Zope Foundation
 organization <https://github.com/zopefoundation>`_ on GitHub.
 
+
+Overview
+========
+What is Zope and its related projects?
+
 .. toctree::
-   :hidden:
+   :maxdepth: 2
 
    world
 
@@ -22,9 +27,9 @@ Documentation
 An overview over the most important documentation resources.
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
 
-   documentation/index
+   resources
 
 
 Community
@@ -35,5 +40,6 @@ open-source communities worldwide.
 .. toctree::
    :maxdepth: 1
 
+   releases
    community
    developer/index
