@@ -26,9 +26,9 @@ Support schedule
 +======+=======+==============+===========+==========+============+============+
 |2.13  |2.13.30|2.7           |end of life|2010-11-05|2019-02-09  |2020-12-31  |
 +------+-------+--------------+-----------+----------+------------+------------+
-|4.0   |4.8.4  |2.7, 3.5-3.8  |security   |2019-05-10|2021-09-30  |2022-12-31  |
+|4.0   |4.8.5  |2.7, 3.5-3.8  |security   |2019-05-10|2021-09-30  |2022-12-31  |
 +------+-------+--------------+-----------+----------+------------+------------+
-|5.0   |5.7.1  |3.6-3.11      |maintenance|2020-10-08|2023-12-31  |2024-12-31  |
+|5.0   |5.7.2  |3.6-3.11      |maintenance|2020-10-08|2023-12-31  |2024-12-31  |
 |      |       |[1]_ [2]_ [3]_|           |          |[4]_        |[4]_        |
 +------+-------+--------------+-----------+----------+------------+------------+
 |6.0   |\-     |TBD           |unreleased |TBD [5]_  |2025-12-31  |2027-12-31  |
@@ -144,7 +144,7 @@ Supported Zope versions
 Zope 5
 ~~~~~~
 - First official release: 5.0, October 2020
-- Current release: 5.7.1, December 2022
+- Current release: 5.7.2, December 2022
 - Next release expected: early 2023, roughly every 2-6 months.
 - Supports Python 3.6, 3.7, 3.8, 3.9, 3.10 and 3.11.
 
@@ -167,7 +167,7 @@ upgrading applications from Zope 2. Once you are on Zope 4 and Python 3 the
 next step to Zope 5 is painless and you should migrate **immediately**.
 
 - First official release: 4.0, May 2019
-- Current release: 4.8.4, December 2022
+- Current release: 4.8.5, December 2022
 - Next release expected: early 2023, roughly every 2-6 months.
 - Supports Python 2.7, 3.5, 3.6, 3.7 and 3.8.
 
