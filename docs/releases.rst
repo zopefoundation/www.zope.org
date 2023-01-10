@@ -1,7 +1,7 @@
 Zope release schedule
 =====================
 
-The Zope development and support roadmap. **Last updated: December 2022**
+The Zope development and support roadmap. **Last updated: January 2023**
 
 If you use Plone, please visit the `Plone release schedule
 <https://plone.org/download/release-schedule>`_ for all Plone-specific details.
@@ -26,9 +26,9 @@ Support schedule
 +======+=======+==============+===========+==========+============+============+
 |2.13  |2.13.30|2.7           |end of life|2010-11-05|2019-02-09  |2020-12-31  |
 +------+-------+--------------+-----------+----------+------------+------------+
-|4.0   |4.8.5  |2.7, 3.5-3.8  |security   |2019-05-10|2021-09-30  |2022-12-31  |
+|4.0   |4.8.7  |2.7, 3.5-3.8  |security   |2019-05-10|2021-09-30  |2022-12-31  |
 +------+-------+--------------+-----------+----------+------------+------------+
-|5.0   |5.7.2  |3.6-3.11      |maintenance|2020-10-08|2023-12-31  |2024-12-31  |
+|5.0   |5.8    |3.7-3.11      |maintenance|2020-10-08|2023-12-31  |2024-12-31  |
 |      |       |[1]_ [2]_ [3]_|           |          |[4]_        |[4]_        |
 +------+-------+--------------+-----------+----------+------------+------------+
 |6.0   |\-     |TBD           |unreleased |TBD [5]_  |2025-12-31  |2027-12-31  |
@@ -39,8 +39,7 @@ Support schedule
 
 .. [2] Python 3.11 support added with release 5.7.
 
-.. [3] Python 3.6 support was deprecated with release 5.5.1 and will be removed
-       in Zope 5.8.
+.. [3] Python 3.6 support removed with release 5.8.
 
 .. [4] Tentative: Final support deadlines for the Zope 5 series will be set
        when Zope 6 is released. Zope 5 will enjoy full maintenance support at
@@ -127,8 +126,7 @@ We cannot foresee everything. Please be a bit forgiving.
 
 General advice for all Zope versions
 ------------------------------------
-- Zope 4 is only meant as a stepping stone to ease migration to Python 3.
-  Migrate to Zope 5 on Python 3 as soon as you can.
+- Zope 4 has reached end-of-life status. Migrate to Zope 5 as soon as you can.
 - Use the **highest Python version** that is supported by your Zope version.
   For release schedules of core Python, see https://www.python.org/downloads/
 - Zope 4 and Zope 5 users should upgrade to at least Python 3.7 **as soon as
@@ -144,14 +142,11 @@ Supported Zope versions
 Zope 5
 ~~~~~~
 - First official release: 5.0, October 2020
-- Current release: 5.7.2, December 2022
+- Current release: 5.8, January 2023
 - Next release expected: early 2023, roughly every 2-6 months.
-- Supports Python 3.6, 3.7, 3.8, 3.9, 3.10 and 3.11.
+- Supports Python 3.7, 3.8, 3.9, 3.10 and 3.11.
 
-  - Please note that Python 3.6 has reached end of life, you should use Python
-    3.7 at least.
-  - Python 3.6 support was deprecated in Zope 5.5.1 and will be removed in
-    Zope 5.8.
+  - Python 3.6 support was removed in release 5.8.
   - Python 3.10 support was added in release 5.4.
   - Python 3.11 support was added in release 5.7.
 
@@ -160,6 +155,10 @@ Zope 5
 - Security support until at least December 31, 2024.
 
 
+
+No longer supported Zope versions
+---------------------------------
+
 Zope 4
 ~~~~~~
 Zope 4 supports Python 2 and Python 3. It is meant to act as a bridge for those
@@ -167,8 +166,9 @@ upgrading applications from Zope 2. Once you are on Zope 4 and Python 3 the
 next step to Zope 5 is painless and you should migrate **immediately**.
 
 - First official release: 4.0, May 2019
-- Current release: 4.8.5, December 2022
-- Next release expected: early 2023, roughly every 2-6 months.
+- Current release: 4.8.7, January 2023
+- Next release expected: Zope 4 has reached end-of-life. There **may** be
+  sporadic releases to fix urgent issues. Please move to Zope 5.
 - Supports Python 2.7, 3.5, 3.6, 3.7 and 3.8.
 
   - Please note that Python 2.7, 3.5 and 3.6 have reached end of life, you
@@ -176,11 +176,8 @@ next step to Zope 5 is painless and you should migrate **immediately**.
 
 - Used by Plone 5.2
 - Maintenance support has ended September 30, 2021
-- Security support until December 31, 2022.
+- Security support has ended on December 31, 2022.
 
-
-No longer supported Zope versions
----------------------------------
 
 Zope 2.13
 ~~~~~~~~~
