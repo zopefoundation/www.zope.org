@@ -1,7 +1,7 @@
 Zope release schedule
 =====================
 
-The Zope development and support roadmap. **Last updated: January 2023**
+The Zope development and support roadmap. **Last updated: September 2023**
 
 If you use Plone, please visit the `Plone release schedule
 <https://plone.org/download/release-schedule>`_ for all Plone-specific details.
@@ -28,10 +28,10 @@ Support schedule
 +------+-------+--------------+-----------+----------+------------+------------+
 |4.0   |4.8.7  |2.7, 3.5-3.8  |end of life|2019-05-10|2021-09-30  |2022-12-31  |
 +------+-------+--------------+-----------+----------+------------+------------+
-|5.0   |5.8.3  |3.7-3.11      |maintenance|2020-10-08|2023-12-31  |2024-12-31  |
+|5.0   |5.8.5  |3.7-3.11      |maintenance|2020-10-08|2024-12-31  |2025-12-31  |
 |      |       |[1]_ [2]_ [3]_|           |          |[4]_        |[4]_        |
 +------+-------+--------------+-----------+----------+------------+------------+
-|6.0   |\-     |TBD           |unreleased |TBD [5]_  |2025-12-31  |2027-12-31  |
+|6.0   |\-     |TBD           |unreleased |TBD [5]_  |2026-12-31  |2027-12-31  |
 |      |       |              |           |          |[6]_        |[6]_        |
 +------+-------+--------------+-----------+----------+------------+------------+
 
