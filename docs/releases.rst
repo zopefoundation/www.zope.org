@@ -26,7 +26,7 @@ Support schedule
 +======+=======+==============+===========+==========+============+============+
 |2.13  |2.13.30|2.7           |end of life|2010-11-05|2019-02-09  |2020-12-31  |
 +------+-------+--------------+-----------+----------+------------+------------+
-|4.0   |4.8.7  |2.7, 3.5-3.8  |end of life|2019-05-10|2021-09-30  |2022-12-31  |
+|4.0   |4.8.10 |2.7, 3.5-3.8  |end of life|2019-05-10|2021-09-30  |2022-12-31  |
 +------+-------+--------------+-----------+----------+------------+------------+
 |5.0   |5.8.5  |3.7-3.11      |maintenance|2020-10-08|2024-12-31  |2025-12-31  |
 |      |       |[1]_ [2]_ [3]_|           |          |[4]_        |[4]_        |
@@ -142,7 +142,7 @@ Supported Zope versions
 Zope 5
 ~~~~~~
 - First official release: 5.0, October 2020
-- Current release: 5.8.3, June 2023
+- Current release: 5.8.5, September 2023
 - Next release expected: early 2023, roughly every 2-6 months.
 - Supports Python 3.7, 3.8, 3.9, 3.10 and 3.11.
 
@@ -151,8 +151,8 @@ Zope 5
   - Python 3.11 support was added in release 5.7.
 
 - Used by Plone 6.0
-- Maintenance support until at least December 31, 2023.
-- Security support until at least December 31, 2024.
+- Maintenance support until at least December 31, 2024.
+- Security support until at least December 31, 2025.
 
 
 
@@ -166,7 +166,7 @@ upgrading applications from Zope 2. Once you are on Zope 4 and Python 3 the
 next step to Zope 5 is painless and you should migrate **immediately**.
 
 - First official release: 4.0, May 2019
-- Current release: 4.8.7, January 2023
+- Current release: 4.8.10, September 2023
 - Next release expected: Zope 4 has reached end-of-life. There **may** be
   sporadic releases to fix urgent issues. Please move to Zope 5.
 - Supports Python 2.7, 3.5, 3.6, 3.7 and 3.8.
