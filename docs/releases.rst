@@ -19,37 +19,37 @@ Support schedule
 
 .. image:: /_static/releases.png
 
-+------+-------+--------------+-----------+----------+------------+------------+
-|Series|Latest |Python        |Status     |First     |End support:|End support:|
-+------+-------+--------------+-----------+----------+------------+------------+
-|      |release|versions      |           |release   |maintenance |security    |
-+======+=======+==============+===========+==========+============+============+
-|2.13  |2.13.30|2.7           |end of life|2010-11-05|2019-02-09  |2020-12-31  |
-+------+-------+--------------+-----------+----------+------------+------------+
-|4.0   |4.8.11 |2.7, 3.5-3.8  |end of life|2019-05-10|2021-09-30  |2022-12-31  |
-+------+-------+--------------+-----------+----------+------------+------------+
-|5.0   |5.8.6  |3.7-3.11      |maintenance|2020-10-08|2024-12-31  |2025-12-31  |
-|      |       |[1]_ [2]_ [3]_|           |          |[4]_        |[4]_        |
-+------+-------+--------------+-----------+----------+------------+------------+
-|6.0   |\-     |TBD           |unreleased |TBD [5]_  |2026-12-31  |2027-12-31  |
-|      |       |              |           |          |[6]_        |[6]_        |
-+------+-------+--------------+-----------+----------+------------+------------+
++------+-------+-------------+-----------+----------+------------+------------+
+|Series|Latest |Python       |Status     |First     |End support:|End support:|
++------+-------+-------------+-----------+----------+------------+------------+
+|      |release|versions     |           |release   |maintenance |security    |
++======+=======+=============+===========+==========+============+============+
+|2.13  |2.13.30|2.7          |end of life|2010-11-05|2019-02-09  |2020-12-31  |
++------+-------+-------------+-----------+----------+------------+------------+
+|4.0   |4.8.11 |2.7, 3.5-3.8 |end of life|2019-05-10|2021-09-30  |2022-12-31  |
++------+-------+-------------+-----------+----------+------------+------------+
+|5.0   |5.9    |3.7-3.12     |maintenance|2020-10-08|2024-12-31  |2025-12-31  |
+|      |       |[1]_ [2]_    |           |          |[3]_        |[3]_        |
++------+-------+-------------+-----------+----------+------------+------------+
+|6.0   |\-     |TBD          |unreleased |TBD [4]_  |2026-12-31  |2027-12-31  |
+|      |       |             |           |          |[5]_        |[5]_        |
++------+-------+-------------+-----------+----------+------------+------------+
 
 .. [1] Python 3.10 support added with release 5.4.
+       Python 3.11 support added with release 5.7.
+       Python 3.12 support added with release 5.9.
 
-.. [2] Python 3.11 support added with release 5.7.
+.. [2] Python 3.6 support removed with release 5.8.
 
-.. [3] Python 3.6 support removed with release 5.8.
-
-.. [4] Tentative: Final support deadlines for the Zope 5 series will be set
+.. [3] Tentative: Final support deadlines for the Zope 5 series will be set
        when Zope 6 is released. Zope 5 will enjoy full maintenance support at
        least until Zope 6 is released and Security support for at least one year
        after that.
 
-.. [5] There is no release date for Zope 6 yet because there hasn't been any
+.. [4] There is no release date for Zope 6 yet because there hasn't been any
        backwards-incompatible changes warranting a new major release yet.
 
-.. [6] Purely speculative and subject to change after a release date has been
+.. [5] Purely speculative and subject to change after a release date has been
        set for Zope 6.
 
 Definitions
@@ -142,13 +142,16 @@ Supported Zope versions
 Zope 5
 ~~~~~~
 - First official release: 5.0, October 2020
-- Current release: 5.8.6, October 2023
+- Current release: 5.9, November 2023
 - Next release expected: early 2023, roughly every 2-6 months.
-- Supports Python 3.7, 3.8, 3.9, 3.10 and 3.11.
+- Supports Python 3.7, 3.8, 3.9, 3.10, 3.11 and 3.12.
 
   - Python 3.6 support was removed in release 5.8.
   - Python 3.10 support was added in release 5.4.
   - Python 3.11 support was added in release 5.7.
+  - Python 3.12 support was added in release 5.9.
+  - Please note that Python 3.7 has reached end of life, you
+    should use Python 3.8 or higher.
 
 - Used by Plone 6.0
 - Maintenance support until at least December 31, 2024.
@@ -171,8 +174,8 @@ next step to Zope 5 is painless and you should migrate **immediately**.
   sporadic releases to fix urgent issues. Please move to Zope 5.
 - Supports Python 2.7, 3.5, 3.6, 3.7 and 3.8.
 
-  - Please note that Python 2.7, 3.5 and 3.6 have reached end of life, you
-    should use Python 3.7 at least.
+  - Please note that Python 2.7, 3.5, 3.6 and 3.7 have reached end of life, you
+    should use Python 3.8.
 
 - Used by Plone 5.2
 - Maintenance support has ended September 30, 2021
