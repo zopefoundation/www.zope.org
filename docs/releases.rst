@@ -1,7 +1,7 @@
 Zope release schedule
 =====================
 
-The Zope development and support roadmap. **Last updated: September 2023**
+The Zope development and support roadmap. **Last updated: January 2024**
 
 If you use Plone, please visit the `Plone release schedule
 <https://plone.org/download/release-schedule>`_ for all Plone-specific details.
@@ -14,8 +14,17 @@ Zope currently has two release managers, Michael Howitz and Jens Vagelpohl.
    :local:
    :depth: 1
 
+
 Support schedule
 ----------------
+
+.. note::
+
+    The end dates for Zope 5 maintenance and security support represent the
+    **earliest dates** for ending support **after Zope 6 is released**. There
+    are no firm plans for a Zope 6 release at this time, which means Zope 5
+    will be supported longer than stated here.
+
 
 .. image:: /_static/releases.png
 
@@ -31,8 +40,7 @@ Support schedule
 |5.0   |5.9    |3.7-3.12     |maintenance|2020-10-08|2024-12-31  |2025-12-31  |
 |      |       |[1]_ [2]_    |           |          |[3]_        |[3]_        |
 +------+-------+-------------+-----------+----------+------------+------------+
-|6.0   |\-     |TBD          |unreleased |TBD [4]_  |2026-12-31  |2027-12-31  |
-|      |       |             |           |          |[5]_        |[5]_        |
+|6.0   |\-     |TBD          |unreleased |TBD [4]_  |TBD [4]_    | TBD [4]_   |
 +------+-------+-------------+-----------+----------+------------+------------+
 
 .. [1] Python 3.10 support added with release 5.4.
@@ -41,16 +49,16 @@ Support schedule
 
 .. [2] Python 3.6 support removed with release 5.8.
 
-.. [3] Tentative: Final support deadlines for the Zope 5 series will be set
-       when Zope 6 is released. Zope 5 will enjoy full maintenance support at
-       least until Zope 6 is released and Security support for at least one year
-       after that.
+.. [3] Tentative **minimum** support duration and subject to change/extension:
+       Final support deadlines for the Zope 5 series will be set when Zope 6 is
+       released. Zope 5 will enjoy full maintenance support at least until
+       Zope 6 is released and Security support for at least one year after
+       that.
 
-.. [4] There is no release date for Zope 6 yet because there hasn't been any
-       backwards-incompatible changes warranting a new major release yet.
+.. [4] There are no set plans for a Zope 6 release yet. Final support periods
+       for both Zope 5 and Zope 6 will be set once Zope 6 is released and
+       follow the `Maintenance policy` guidelines shown below.
 
-.. [5] Purely speculative and subject to change after a release date has been
-       set for Zope 6.
 
 Definitions
 -----------
@@ -64,6 +72,7 @@ On this page, we use these terms:
 - *Minor* version: 4.5, 5.7
 - *Bugfix* version: 4.4.1, 5.6.1
 
+
 Release cadence
 ---------------
 This is the expected release cadence for Zope:
@@ -72,6 +81,7 @@ This is the expected release cadence for Zope:
 - We aim to release a new major version roughly every 2-3 years.
 - Planning for a new minor or major version usually starts after a release has
   been done. Currently, there is no clear calendar with expected dates.
+
 
 Maintenance policy
 ------------------
@@ -84,6 +94,7 @@ These are the general rules for maintenance support for Zope:
 - If a new major release is published after the two year maintenance support
   window, the previous release series may be downgraded to Security support
   soon thereafter.
+
 
 Security policy
 ---------------
