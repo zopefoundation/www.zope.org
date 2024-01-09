@@ -7,12 +7,12 @@ This repository contains the Sphinx sources for www.zope.org/www.zope.dev.
 Sandbox setup instructions
 --------------------------
 
-Create a virtual environment, install ``zc.buildout`` and run the buildout::
+Create a virtual environment and install the additional requirements from
+``requirements.txt``::
 
   $ python3 -m venv .
   $ bin/pip install -U pip wheel
-  $ bin/pip install zc.buildout
-  $ bin/buildout
+  $ bin/pip install -Ur requirements.txt
 
 
 Building the site
