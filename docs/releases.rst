@@ -1,7 +1,7 @@
 Zope release schedule
 =====================
 
-The Zope development and support roadmap. **Last updated: January 2024**
+The Zope development and support roadmap. **Last updated: May 2024**
 
 If you use Plone, please visit the `Plone release schedule
 <https://plone.org/download/release-schedule>`_ for all Plone-specific details.
@@ -37,7 +37,7 @@ Support schedule
 +------+-------+-------------+-----------+----------+------------+------------+
 |4.0   |4.8.11 |2.7, 3.5-3.8 |end of life|2019-05-10|2021-09-30  |2022-12-31  |
 +------+-------+-------------+-----------+----------+------------+------------+
-|5.0   |5.9    |3.7-3.12     |maintenance|2020-10-08|2024-12-31  |2025-12-31  |
+|5.0   |5.10   |3.7-3.12     |maintenance|2020-10-08|2024-12-31  |2025-12-31  |
 |      |       |[1]_ [2]_    |           |          |[3]_        |[3]_        |
 +------+-------+-------------+-----------+----------+------------+------------+
 |6.0   |\-     |TBD          |unreleased |TBD [4]_  |TBD [4]_    | TBD [4]_   |
@@ -153,8 +153,8 @@ Supported Zope versions
 Zope 5
 ~~~~~~
 - First official release: 5.0, October 2020
-- Current release: 5.9, November 2023
-- Next release expected: early 2023, roughly every 2-6 months.
+- Current release: 5.10, May 2024
+- Next release expected: Summer 2024, roughly every 2-6 months.
 - Supports Python 3.7, 3.8, 3.9, 3.10, 3.11 and 3.12.
 
   - Python 3.6 support was removed in release 5.8.
