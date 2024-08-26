@@ -13,8 +13,8 @@ application instability and crashes.
     publication on PyPI should only be built in standardized and predictable
     environments.
 
-To minimize problems we have automated binary wheel building using CI providers
-like AppVeyor and GitHub Actions. Wheels are built and uploaded using a special
+To minimize problems we have automated binary wheel building using GitHub
+Actions. Wheels are built and uploaded using a special
 PyPI account named ``zope.wheelbuilder``. These configurations and the PyPI
 account are currently maintained by Marius Gedminas, Michael Howitz and Jens
 Vagelpohl. You can contact them by posting your question or bug report in the
@@ -30,54 +30,6 @@ Prerequisites
 - Log into the ``zope.wheelbuilder`` account and create an API token for the
   project on the "Account settings" page with upload permissions and the
   project name as scope. Copy the token value - this is the only time you can.
-
-Using Appveyor
---------------
-- Log into Appveyor at ci.appveyor.com, click on "Account" at the top and then
-  "Encrypt YAML" on the left-hand menu. Paste the copied token into the input
-  field and then copy the encrypted value.
-- If the project already uses the `standardized parameterized project
-  configuration <https://github.com/zopefoundation/meta/tree/master/config>`_
-  add the following to the ``.meta.toml`` file in the ``[appveyor]`` section,
-  replacing ``<USER>`` with the Appveyor account used and ``<ENCRYPTED TOKEN>``
-  with the encrypted value from the previous step. Then rebuild the
-  configuration with ``config-package.py`` so the actual ``appveyor.yml`` file
-  is updated:
-
-.. code:: ini
-
-    [appveyor]
-    global-env-vars = [
-        "# Currently the builds use @<USER>'s Appveyor account.  The PyPI token",
-        "# belongs to zope.wheelbuilder, managed by @mgedmin and @dataflake.",
-        "",
-        "global:",
-        "  TWINE_USERNAME: __token__",
-        "  TWINE_PASSWORD:",
-        "    secure: <ENCRYPTED TOKEN>",
-        ]
-
-- If you are not using the standardized project config you can edit
-  ``appveyor.yml`` directly:
-
-.. code:: yaml
-
-    environment:
-
-      global:
-        # Currently the builds use @<USER>'s Appveyor account.  The PyPI token
-        # belongs to zope.wheelbuilder, managed by @mgedmin and @dataflake.
-
-        TWINE_USERNAME: __token__
-        TWINE_PASSWORD:
-          secure: <ENCRYPTED TOKEN>
-
-    <...>
-
-    deploy_script:
-      - ps: if ($env:APPVEYOR_REPO_TAG -eq $TRUE) { pip install twine; twine upload --skip-existing dist\*.whl }
-    
-    deploy: on
 
 
 Using GitHub Actions
