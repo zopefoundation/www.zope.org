@@ -1,7 +1,7 @@
 Zope release schedule
 =====================
 
-The Zope development and support roadmap. **Last updated: May 2024**
+The Zope development and support roadmap. **Last updated: October 2024**
 
 If you use Plone, please visit the `Plone release schedule
 <https://plone.org/download/release-schedule>`_ for all Plone-specific details.
@@ -37,7 +37,7 @@ Support schedule
 +------+-------+-------------+-----------+----------+------------+------------+
 |4.0   |4.8.11 |2.7, 3.5-3.8 |end of life|2019-05-10|2021-09-30  |2022-12-31  |
 +------+-------+-------------+-----------+----------+------------+------------+
-|5.0   |5.10   |3.7-3.12     |maintenance|2020-10-08|2024-12-31  |2025-12-31  |
+|5.0   |5.11   |3.8-3.13     |maintenance|2020-10-08|2025-12-31  |2026-12-31  |
 |      |       |[1]_ [2]_    |           |          |[3]_        |[3]_        |
 +------+-------+-------------+-----------+----------+------------+------------+
 |6.0   |\-     |TBD          |unreleased |TBD [4]_  |TBD [4]_    | TBD [4]_   |
@@ -46,8 +46,10 @@ Support schedule
 .. [1] Python 3.10 support added with release 5.4.
        Python 3.11 support added with release 5.7.
        Python 3.12 support added with release 5.9.
+       Python 3.13 support added with release 5.11.
 
 .. [2] Python 3.6 support removed with release 5.8.
+       Python 3.7 support removed with release 5.11.
 
 .. [3] Tentative **minimum** support duration and subject to change/extension:
        Final support deadlines for the Zope 5 series will be set when Zope 6 is
@@ -153,20 +155,22 @@ Supported Zope versions
 Zope 5
 ~~~~~~
 - First official release: 5.0, October 2020
-- Current release: 5.10, May 2024
-- Next release expected: Summer 2024, roughly every 2-6 months.
-- Supports Python 3.7, 3.8, 3.9, 3.10, 3.11 and 3.12.
+- Current release: 5.11, October 2024
+- Next release expected: Spring 2025, roughly every 2-6 months.
+- Supports Python 3.8, 3.9, 3.10, 3.11, 3.12 and 3.13.
 
   - Python 3.6 support was removed in release 5.8.
+  - Python 3.7 support was removed in release 5.11.
   - Python 3.10 support was added in release 5.4.
   - Python 3.11 support was added in release 5.7.
   - Python 3.12 support was added in release 5.9.
-  - Please note that Python 3.7 has reached end of life, you
-    should use Python 3.8 or higher.
+  - Python 3.13 support was added in release 5.11.
+  - Please note that Python 3.8 has reached end of life, you
+    should use Python 3.9 or higher.
 
 - Used by Plone 6.0
-- Maintenance support until at least December 31, 2024.
-- Security support until at least December 31, 2025.
+- Maintenance support until at least December 31, 2025.
+- Security support until at least December 31, 2026.
 
 
 
