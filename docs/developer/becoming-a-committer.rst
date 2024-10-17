@@ -13,13 +13,13 @@ at https://plone.org/foundation/contributors-agreement/contributors-agreement-ex
     Exisiting Plone contributors are required to submit the contributor
     agreement again to gain access to the Zope repositories.
 
-1. Print, fill out and sign the `Plone Contributor Agreement
-   <https://plone.org/foundation/contributors-agreement/agreement.pdf>`_.
-   On page 2 enter `Zope` in the field for `program`.
+You can sign the contributor agreement electronically by following the link
+`Contributor Agreement Form for Zope` on
+the `Plone Foundation contributor agreement page
+<https://plone.org/foundation/contributors-agreement>`_.
 
-2. Scan the agreement and submit it by email to agreements@plone.org
+As mentioned on that page, processing may take a few days.
 
-3. You will be added to the GitHub repository shortly.
 
 Subscribe to the Mailing Lists
 ------------------------------

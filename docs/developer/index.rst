@@ -18,13 +18,10 @@ welcome contributions in different forms:
 For any changes in the repository besides trivial typo fixes you are required
 to sign the contributor agreement. See :doc:`becoming-a-committer` for details.
 
-
 Visit https://github.com/zopefoundation to see and browse all repositories
-maintained by the Zope developer community.
+maintained by the Zope developer community. Published packages on PyPI are
+bundled under the ``zope`` organization at https://pypi.org/org/zope/.
 
-The overview at https://zope3.pov.lt/py3/gha.html lists the supported
-Python versions and the build status for all Zope Foundation projects
-(the overview is not guaranteed to be complete and accurate).
 
 .. toctree::
    :maxdepth: 1
