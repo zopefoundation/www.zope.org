@@ -34,8 +34,8 @@ Here's how you can make it easy to accept your contribution:
 - "vendoring in" of third-party code is not allowed unless all contributors to
   that code have also signed a contributor agreement.
 
-Please wait for approval from at least one other contributor before merging
-your code, which you can do yourself.
+- For new contributors, pull request merges are handled by the reviewers after
+  the contribution has been reviewed and accepted.
 
 
 .. _coding-standards:
@@ -79,46 +79,40 @@ normally arranged as a :mod:`distutils` project, e.g.::
 
   <directory>
   - setup.py
-  - README.txt
-  - CHANGES.txt
+  - README.rst
+  - CHANGES.rst
   + docs/
     - Makefile
     - conf.py
     - index.rst
     - api.rst
-    + .static/
-    + .build/
-    + .templates/
-  + package/
-    - __init__.py
-    + subpacakge/
+    + _static/
+    + _build/
+    + _templates/
+  + src
+    + package/
       - __init__.py
-      - module.py
-      + tests/
+      + subpacakge/
         - __init__.py
-        - test_module.py
-      + templates/
-        - template.pt
+        - module.py
+        + tests/
+          - __init__.py
+          - test_module.py
+        + templates/
+          - template.pt
 
-Many packages place the first-level ``package`` directory in a ``src``
-subdirectory inside the checkout.
 
-
-.. _using-buildout:
-
-Running Tests using :mod:`zc.buildout`
---------------------------------------
+Running package tests
+---------------------
 
 Most projects in the Zope repository are already configured to support
-building in-place and running tests using :mod:`zc.buildout`.
+building in-place and running tests using ``tox``:
 
-.. code-block:: sh
+.. code-block:: console
 
    $ git clone https://github.com/zopefoundation/Zope.git
    $ cd Zope
    $ python3 -m venv .
-   $ bin/pip install -U pip wheel zc.buildout
-   $ bin/buildout
-   ...
-   $ bin/test
-   ...
+   $ bin/pip install -U pip wheel tox
+   $ bin/tox [...]
+   <tox output>

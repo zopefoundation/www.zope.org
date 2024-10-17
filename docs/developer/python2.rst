@@ -1,22 +1,23 @@
-Python 2 support
-================
+Python 2 support (obsolete)
+===========================
+
 
 .. note::
-    This document is relevant for packages that are either direct dependencies
-    of Zope version 4 or popular add-ons for Zope version 4 and their
-    dependencies.
+    This document is obsolete. Zope 4 was the last version of Zope to support
+    Python 2 and it has reached end-of-life status at the end of 2022. This
+    information is preserved for reference purposes only.
 
-Zope 4 will retain full Python 2 (and Python 3.5) compatibility throughout its
+Zope 4 retained full Python 2 (and Python 3.5) compatibility throughout its
 lifetime. That means all its `direct dependencies
 <https://zopefoundation.github.io/Zope/releases/4.x/versions-prod.cfg>`_
-and (ideally) many popular add-on packages should also continue supporting
-Python 2 and Python 3.5 until Zope 4 reaches end-of-life status.
+and (ideally) many popular add-on packages also supported
+Python 2 and Python 3.5 until Zope 4 reached end-of-life status.
 
 
 When to drop support
 --------------------
 
-Now it the time to drop support for Python 2.7 up to 3.6 as they are all
+Now is the time to drop support for Python 2.7 up to 3.6 as they are all
 no longer maintained by the Python community and the maintencance burden
 has become too heavy.
 
