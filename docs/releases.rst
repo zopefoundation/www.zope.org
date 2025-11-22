@@ -1,7 +1,7 @@
 Zope release schedule
 =====================
 
-The Zope development and support roadmap. **Last updated: March 2025**
+The Zope development and support roadmap. **Last updated: November 2025**
 
 If you use Plone, please visit the `Plone release schedule
 <https://plone.org/download/release-schedule>`_ for all Plone-specific details.
