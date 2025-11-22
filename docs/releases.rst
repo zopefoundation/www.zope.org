@@ -190,10 +190,6 @@ next step to Zope 5 is painless and you should migrate **immediately**.
 - Next release expected: Zope 4 has reached end-of-life. There **may** be
   sporadic releases to fix urgent issues. Please move to Zope 5.
 - Supports Python 2.7, 3.5, 3.6, 3.7 and 3.8.
-
-  - Please note that Python 2.7, 3.5, 3.6 and 3.7 have reached end of life, you
-    should use Python 3.8.
-
 - Used by Plone 5.2
 - Maintenance support has ended September 30, 2021
 - Security support has ended on December 31, 2022.
