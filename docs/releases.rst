@@ -18,14 +18,6 @@ Zope currently has two release managers, Michael Howitz and Jens Vagelpohl.
 Support schedule
 ----------------
 
-.. note::
-
-    The end dates for Zope 5 maintenance and security support represent the
-    **earliest dates** for ending support **after Zope 6 is released**. There
-    are no firm plans for a Zope 6 release at this time, which means Zope 5
-    will be supported longer than stated here.
-
-
 .. image:: /_static/releases.png
 
 +------+-------+-------------+-----------+----------+------------+------------+
@@ -38,9 +30,10 @@ Support schedule
 |4.0   |4.8.11 |2.7, 3.5-3.8 |end of life|2019-05-10|2021-09-30  |2022-12-31  |
 +------+-------+-------------+-----------+----------+------------+------------+
 |5.0   |5.13   |3.9-3.13     |maintenance|2020-10-08|2025-12-31  |2026-12-31  |
-|      |       |[1]_ [2]_    |           |          |[3]_        |[3]_        |
+|      |       |[1]_ [2]_    |           |          |            |            |
 +------+-------+-------------+-----------+----------+------------+------------+
-|6.0   |\-     |TBD          |unreleased |TBD [4]_  |TBD [4]_    | TBD [4]_   |
+|6.0   |\-     |3.10-3.14    |unreleased |2025-12-XX|2027-12-31  |2028-12-31  |
+|      |       |             |           |          |[3]_        |[3]_        |
 +------+-------+-------------+-----------+----------+------------+------------+
 
 .. [1] Python 3.10 support added with release 5.4.
@@ -53,14 +46,10 @@ Support schedule
        Python 3.8 support removed with release 5.13.
 
 .. [3] Tentative **minimum** support duration and subject to change/extension:
-       Final support deadlines for the Zope 5 series will be set when Zope 6 is
-       released. Zope 5 will enjoy full maintenance support at least until
-       Zope 6 is released and Security support for at least one year after
+       Final support deadlines for the Zope 6 series will be set when Zope 7 is
+       released. Zope 6 will enjoy full maintenance support at least until
+       Zope 7 is released and Security support for at least one year after
        that.
-
-.. [4] There are no set plans for a Zope 6 release yet. Final support periods
-       for both Zope 5 and Zope 6 will be set once Zope 6 is released and
-       follow the `Maintenance policy` guidelines shown below.
 
 
 Definitions
@@ -112,6 +101,7 @@ These are the general rules for security support for Zope:
 - Note that underlying versions of Python and other dependencies may be out of
   security support sooner.
 
+
 Versioning policy
 -----------------
 Zope and Zope ecosystem packages follow `semantic versioning
@@ -138,6 +128,7 @@ community add-ons and own code on top of it. This means that even a seemingly
 innocent fix like adding a class in HTML could break something for someone.
 We cannot foresee everything. Please be a bit forgiving.
 
+
 General advice for all Zope versions
 ------------------------------------
 - Zope 4 has reached end-of-life status. Migrate to Zope 5 as soon as you can.
@@ -152,6 +143,14 @@ General advice for all Zope versions
 
 Supported Zope versions
 -----------------------
+
+Zope 6
+~~~~~~
+- First official release: 6.0, unreleased (probably December 2025)
+- Current release: unreleased
+- Next release expected: December 2025, roughly every 2-6 months.
+- Supports Python 3.10, 3.11, 3.12, 3.13 and 3.14.
+
 
 Zope 5
 ~~~~~~
