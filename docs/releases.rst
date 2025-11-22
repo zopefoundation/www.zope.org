@@ -150,6 +150,9 @@ Zope 6
 - Current release: unreleased
 - Next release expected: December 2025, roughly every 2-6 months.
 - Supports Python 3.10, 3.11, 3.12, 3.13 and 3.14.
+- Used by Plone 6 starting with release 6.2.
+- Maintenance support until at least December 31, 2027.
+- Security support until at least December 31, 2028.
 
 
 Zope 5
@@ -167,9 +170,9 @@ Zope 5
   - Python 3.12 support was added in release 5.9.
   - Python 3.13 support was added in release 5.11.
 
-- Used by Plone 6
-- Maintenance support until at least December 31, 2025.
-- Security support until at least December 31, 2026.
+- Used by Plone 6 until release 6.1.
+- Maintenance support until December 31, 2025.
+- Security support until December 31, 2026.
 
 
 
