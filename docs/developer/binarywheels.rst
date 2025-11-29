@@ -8,39 +8,43 @@ application instability and crashes.
 
 
 .. warning::
-    Publishing binary wheels built in a local build environment is highly
-    discouraged! Every build environment is different, binary wheels made for
-    publication on PyPI should only be built in standardized and predictable
-    environments.
 
-To minimize problems we have automated binary wheel building using GitHub
-Actions. Wheels are built and uploaded using a special
-PyPI account named ``zope.wheelbuilder``. These configurations and the PyPI
-account are currently maintained by Marius Gedminas, Michael Howitz and Jens
-Vagelpohl. You can contact them by posting your question or bug report in the
-`meta repository issue tracker
-<https://github.com/zopefoundation/meta/issues>`_. Here is a short description
-of the process, please note that some steps can only be performed by the
-configuration maintainers:
+    Do not publish binary wheels created in a local build environment to PyPI!
+    Every build environment is different, binary wheels made for publication
+    on PyPI should only be built in standardized and predictable environments.
+
+Binary wheel building and publishing for Zope Foundation projects is done as
+part of the GitHub Actions tests automation. Publishing is done automatically
+whenever a tag is pushed to a repository that uses C code extensions. To
+prevent supply chain attacks, this publishing process requires manual approval
+by at least one member of the GitHub group ``release-managers`` in the
+``zopefoundation`` organization.
+
+Here is a short description of the process for repository and PyPI project
+admins:
 
 Prerequisites
 -------------
-- Every project publishing binary wheels must add the PyPI account
-  ``zope.wheelbuilder`` to the list of project maintainers on PyPI. 
-- Log into the ``zope.wheelbuilder`` account and create an API token for the
-  project on the "Account settings" page with upload permissions and the
-  project name as scope. Copy the token value - this is the only time you can.
+- The project is maintained using `zope.meta
+  <https://zopemeta.readthedocs.io/>`_ and uses the ``c-code`` template.
 
+Set up steps on GitHub
+----------------------
+- Log into GitHub, visit the repository settings page and click on
+  `Environments` on the left.
+- Create an environment named `pypi` and enable `Required reviewers` in the
+  `Deployment protection rules` section. Add at least the group
+  ``zopefoundation/release-managers`` and click `Save protection rules`.
 
-Using GitHub Actions
---------------------
-- On your project GitHub page go to "Settings" and then click on "Secrets" on
-  the left-hand menu. Create a new repository secret and call it
-  ``TWINE_PASSWORD``. Paste the API token value you created for the
-  ``zope.wheelbuilder`` PyPI account.
-- Take a look at a `complete GitHub Actions test and wheel building
-  configuration
-  <https://github.com/zopefoundation/ExtensionClass/blob/master/.github/workflows/tests.yml>`_
-  for inspiration, or if you already use the `standardized parameterized project
-  configuration <https://github.com/zopefoundation/meta/tree/master/config>`_
-  simply build your configuration from the template named `c-code`.
+Setup steps on PyPI
+-------------------
+- Log into PyPI, visit the project's page and click on `Manage project`.
+- Select `Publishing` and fill in the `Add a new publisher` form:
+
+  - Owner: ``zopefoundation``
+  - Repository name: The name of the repository
+  - Workflow name: ``tests.yml``
+  - Environment name: ``pypi``
+
+  Click `Add` and the project is all set for using the Trusted Publishing
+  mechanism.
