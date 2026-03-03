@@ -160,7 +160,7 @@ Zope 5
 ~~~~~~
 - First official release: 5.0, October 2020
 - Current release: 5.14, March 2026
-- Next release expected: Summer 2025, roughly every 6 months.
+- Next release expected: Summer 2026, roughly every 6 months.
 - Supports Python 3.10, 3.11, 3.12 and 3.13.
 
   - Python 3.6 support was removed in release 5.8.
