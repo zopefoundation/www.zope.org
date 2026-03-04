@@ -32,7 +32,7 @@ Support schedule
 |5.0   |5.14   |3.10-3.13    |maintenance|2020-10-08|2025-12-31  |2026-12-31  |
 |      |       |[1]_ [2]_    |           |          |            |            |
 +------+-------+-------------+-----------+----------+------------+------------+
-|6.0   |\-     |3.10-3.14    |unreleased |2025-12-XX|2027-12-31  |2028-12-31  |
+|6.0   |6.0    |3.10-3.14    |supported  |2026-03-04|2027-12-31  |2028-12-31  |
 |      |       |             |           |          |[3]_        |[3]_        |
 +------+-------+-------------+-----------+----------+------------+------------+
 
@@ -132,12 +132,10 @@ We cannot foresee everything. Please be a bit forgiving.
 
 General advice for all Zope versions
 ------------------------------------
-- Zope 4 has reached end-of-life status. Migrate to Zope 5 as soon as you can.
+- Zope 4 has reached end-of-life status. Migrate to Zope 5 or 6 as soon as
+  you can.
 - Use the **highest Python version** that is supported by your Zope version.
   For release schedules of core Python, see https://www.python.org/downloads/
-- Zope 4 and Zope 5 users should upgrade to at least Python 3.7 **as soon as
-  possible** to mitigate an `unfixed security issue in the waitress WSGI server
-  <https://github.com/Pylons/waitress/security/advisories/GHSA-4f7p-27jc-3c36>`_.
 - Regularly check the Zope release page at https://pypi.org/project/Zope/ to
   see if any security fixes are available for your Zope version.
 
@@ -147,9 +145,9 @@ Supported Zope versions
 
 Zope 6
 ~~~~~~
-- First official release: 6.0, unreleased (probably December 2025)
-- Current release: unreleased
-- Next release expected: December 2025, roughly every 2-6 months.
+- First official release: 6.0, March 2026
+- Current release: 6.0, March 2026
+- Next release expected: Summer 2026, roughly every 2-6 months.
 - Supports Python 3.10, 3.11, 3.12, 3.13 and 3.14.
 - Used by Plone 6 starting with release 6.2.
 - Maintenance support until at least December 31, 2027.
