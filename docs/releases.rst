@@ -32,7 +32,7 @@ Support schedule
 |5.0   |5.14   |3.10-3.13    |maintenance|2020-10-08|2025-12-31  |2026-12-31  |
 |      |       |[1]_ [2]_    |           |          |            |            |
 +------+-------+-------------+-----------+----------+------------+------------+
-|6.0   |6.0    |3.10-3.14    |supported  |2026-03-04|2027-12-31  |2028-12-31  |
+|6.0   |6.1    |3.10-3.14    |supported  |2026-03-04|2027-12-31  |2028-12-31  |
 |      |       |             |           |          |[3]_        |[3]_        |
 +------+-------+-------------+-----------+----------+------------+------------+
 
@@ -146,7 +146,7 @@ Supported Zope versions
 Zope 6
 ~~~~~~
 - First official release: 6.0, March 2026
-- Current release: 6.0, March 2026
+- Current release: 6.1, April 2026
 - Next release expected: Summer 2026, roughly every 2-6 months.
 - Supports Python 3.10, 3.11, 3.12, 3.13 and 3.14.
 - Used by Plone 6 starting with release 6.2.
