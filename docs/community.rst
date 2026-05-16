@@ -1,7 +1,7 @@
 Community
 =========
 
-The Zope community is one of the Largest and most professional
+The Zope and Plone community is one of the largest and most professional
 open-source communities worldwide.
 
 Getting in touch
@@ -24,21 +24,11 @@ Web sites and forums
   project has an issue tracker for questions, feature requests and bug
   reports.
 
-IRC
-  `freenode.net <https://freenode.net>`_ hosts lots of Zope and Zope
-  products / application related IRC channels. Visit irc.freenode.net and
-  try one of the Following channels: #zope, #zope.de, #plone, #grok
-
-Planets
-  News collections from different Zope related blogs, like `Planet
-  Plone <https://planet.plone.org/>`_ and `Planet Python
-  <https://planetpython.org/>`_ .
-
 
 The Zope Foundation
 -------------------
 The Zope Foundation had the goal to promote, maintain, and develop the
-Zope platform, which it did successfully for many years. It is merging with
+Zope platform, which it did successfully for many years. It has merged with
 the Plone Foundation and passed its responsibilities to the Plone Foundation
 in 2018.
 
